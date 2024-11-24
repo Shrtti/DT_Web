@@ -1,0 +1,171 @@
+nav{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.navbar-nav .nav-link img {
+    width: 30px;
+    height: auto;
+    margin-right: 2px;
+}
+
+.navbar-brand img {
+    height: 36px; 
+}
+
+.intro_para{
+    background: #E9ECEF;
+    border: 0px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.submit_button{
+    background-color: #0029FF;
+    color: #FFFFFF;
+    border: 0px;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: small;
+}
+
+.journey_board {
+    position: absolute;
+    border-radius: 8px;
+    top: 5;
+    left: 0;
+    height: 80%;
+    width: 300px;
+    background-color: #f4f4f4;
+    z-index: 1000;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    transform: translateX(-75%);
+    transition: transform 0.3s ease-in-out;    
+}
+
+.journey_board.expanded {
+    transform: translateX(0); 
+}
+
+.expand_button {
+    display: flex;
+    border-top-right-radius: 8px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+#toggleBtn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.journey_title {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.jour_title{
+    font-size: large;
+}
+
+.journey_content {
+    padding: 30px;
+    font-size: 0.9rem;
+}
+
+.journey_content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.journey_content li {
+    padding: 5px 0;
+}
+
+.notice_board {
+    position: absolute;
+    top: 5;
+    right: 0; 
+    width: 60px;
+    height: 60%;
+    background-color: black;
+    color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notice_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.notice_title {
+    color: #FFFFFF;
+    writing-mode: vertical-rl; 
+    text-orientation: upright;
+    font-size: 16px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    width: 400px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.card-header {
+    margin: 0;
+    padding: 10px;
+    background: #000000;
+    color: white;
+    font-size: 18px;
+}
+
+.card p {
+    padding: 10px;
+    color: #333;
+    font-size: 14px;
+}
+
+.card a {
+    padding: 10px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+.card iframe {
+    width: 100%;
+    height: 150px;
+}
