@@ -62,7 +62,7 @@ tasks.forEach((task) => {
       card.className = "card mb-2 shadow-sm";
 
       const cardHeader = document.createElement("div");
-      cardHeader.className = "card-header bg-primary text-white";
+      cardHeader.className = "card-header bg-black text-white";
       cardHeader.innerText = asset.asset_title;
 
       const cardBody = document.createElement("div");
@@ -70,7 +70,7 @@ tasks.forEach((task) => {
 
       const cardDescription = document.createElement("p");
       cardDescription.className = "card-text";
-      cardDescription.innerText = asset.asset_description.replace(/\r\n/g, ", ");
+      cardDescription.innerText = "Description: " + asset.asset_description.replace(/\r\n/g, ", ");
 
       let cardContent;
       if (asset.asset_id === 18883) {
@@ -83,18 +83,49 @@ tasks.forEach((task) => {
       } else if (asset.asset_id === 18885) {
           cardContent = document.createElement("div");
           cardContent.innerHTML = `
+              <hr>
               <h4 style="color:"black"">Title</h4>
               <textarea class="form-control mb-2"></textarea>
               <h4>Content</h4>
-              <textarea class="form-control mb-2" placeholder="Enter your interpretation here"></textarea>
+              <img src="assets/tools.png" alt="tools" style="width:100%">
+              <textarea class="form-control mb-2" placeholder=""></textarea>
           `;
       } else if (asset.asset_id === 18884) {
           cardContent = document.createElement("div");
           cardContent.innerHTML = `
-              <h4>Thread A</h4>
-              <textarea class="form-control mb-2" placeholder="Enter your sub-thread here"></textarea>
-              <textarea class="form-control mb-2" placeholder="Enter your interpretation here"></textarea>
-              <button class="btn btn-secondary">Add Sub-thread</button>
+              <hr>
+              <h4>Thread A</h4> 
+              <br> 
+              <div class="d-flex">
+                <div class="flex-grow-1 mr-2">
+                <label for="sub-thread" class="form-label">Sub Thread 1</label>
+                <textarea class="form-control mb-2 flex-grow-1 mr-2" placeholder="Enter your sub-thread here"></textarea>
+                </div>
+
+                <div class="ml-2">
+                <label for="sub-thread" class="form-label">Sub Interpretation 1</label>
+                <textarea class="form-control mb-2 ml-2 " placeholder="Enter your interpretation here"></textarea>
+                </div>
+              </div
+              <br>
+              <br>
+              <div class="d-flex align-items-center">
+                <img class="btn option_buttons" src="assets/option_buttons.png" alt="Option_buttons" style="width:40%">
+                <button class="btn select_button">Select Categ ↓</button>
+                <button class="btn select_button">Select Process ↓</button>
+              </div>
+              <br>
+              <br>
+              
+              <button class="btn btn-secondary float-start sub_btn">+ Sub-thread</button>
+              <br>
+              <br>
+
+              <div>
+                <label for="sub-thread" class="form-label summary">Summary for Thread A</label>
+                <textarea class="form-control mb-2 flex-grow-1 mr-2" placeholder="Enter text here"></textarea>
+              </div>
+
           `;
       } else {
           cardContent = document.createElement("p");

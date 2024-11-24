@@ -140,6 +140,9 @@ nav{
     color: #FFFFFF;
 }
 
+.card-text{
+    text-align: left;
+}
 .card-header {
     margin: 0;
     padding: 10px;
@@ -157,15 +160,46 @@ nav{
 .card a {
     padding: 10px;
     color: #000000;
-    text-decoration: none;
     font-weight: bold;
 }
 
-.card a:hover {
-    text-decoration: underline;
+.card div {
+    background-color: #FDFDFD;
+    color: #000000;
+    
 }
 
-.card iframe {
-    width: 100%;
-    height: 150px;
+.card h4 {
+    color: #000000;
+    font-weight: bold;
+    font-size: medium;
+    text-align: left;
+}
+
+.card textarea{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 4px 5px;    
+
+}
+
+.card label{
+    background-color: #e4e5e7;
+    width: 182px;
+    border-radius: 4px;
+    text-align: left;
+    padding: 5px;
+}
+
+.card .summary{
+    width: 370px;
+}
+.card .select_button{
+    border: 1px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 2px 4px 5px;  
+    font-size: small; 
+}
+
+.card .sub_btn{
+    background-color:#0029FF;
+    border-radius: 10px;
 }
